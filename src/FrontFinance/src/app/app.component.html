@@ -1,0 +1,30 @@
+<div class="container">  
+      <h3>Pregão</h3>   
+      <button (click)="postAddDados()">AddDados</button>      
+   <div class="row">  
+    <table class="table table-striped">  
+      <tr>  
+        <td>ID</td>  
+        <td>Open</td>  
+        <!-- <td>Close</td>   -->
+        <td>Date</td>  
+        <td>Variação Dia 1 </td>  
+        <td>Variação Ant</td>  
+        <!-- <td>Low</td>   -->
+        <!-- <td>High</td>   -->
+        <!-- <td>Volume</td>   -->
+      </tr>  
+      <tr *ngFor="let d of data">  
+        <td>{{d.id}}</td>  
+        <td>{{d.open}}</td>  
+        <!-- <td>{{d.close}}</td>   -->
+        <td>{{d.timesTamp}}</td>  
+        <td>{{d.variacaoD1}}</td>  
+        <td>{{d.variacaoDAnt}}</td>  
+        <!-- <td>{{d.low}}</td>   -->
+        <!-- <td>{{d.high}}</td>   -->
+        <!-- <td>{{d.volume}}</td>     -->
+      </tr>  
+    </table>  
+  </div>  
+</div> 
